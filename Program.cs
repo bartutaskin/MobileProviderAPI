@@ -58,8 +58,6 @@ namespace SE4453_MobileProvider
 
             builder.Services.AddScoped<IAuthService, AuthService>();
             
-
-            // No other changes are needed in the file as the error is caused by missing namespaces.
             // JWT Configuration
             builder.Services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
             {
@@ -91,11 +89,7 @@ namespace SE4453_MobileProvider
             if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
             {
                 app.UseSwagger();
-                app.UseSwaggerUI(options =>
-                {
-                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
-                    options.RoutePrefix = string.Empty;
-                });
+                app.UseSwaggerUI();
             }
 
             app.UseHttpsRedirection();
