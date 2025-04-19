@@ -75,8 +75,8 @@ dotnet run
 
 - Custom Bill Calculation Logic:
 
-- - Phone usage: free under 1000 mins, then 10 units per 1000 mins.
+  - Phone usage: free under 1000 mins, then 10 units per 1000 mins.
 
-- - Internet: free under 20 GB, then 10 units per 10 GB.
+  - Internet: free under 20 GB, then 10 units per 10 GB.
 
 - JWT-based Auth: Provides stateless security and supports authorized endpoints.
