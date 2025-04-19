@@ -20,7 +20,6 @@ namespace MobileProvider.Models.Entities
         [Required]
         [MaxLength(100)]
         public string PasswordHash { get; set; }
-        public ICollection<Usage> Usages { get; set; } = new List<Usage>();
-        public ICollection<Bill> Bills { get; set; } = new List<Bill>();
+        
     }
 }

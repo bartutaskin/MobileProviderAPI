@@ -20,6 +20,7 @@ namespace MobileProvider.Models.Entities
         public int Year { get; set; }
 
         [Required]
+        [MaxLength(50)]
         public string Type { get; set; }
 
         [Required]

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MobileProvider.Services;
 
@@ -17,6 +18,7 @@ namespace SE4453_MobileProvider.Controllers
         }
 
         [HttpGet("query-detailed")]
+        [Authorize]
         public IActionResult QueryBillDetails([FromQuery] string subscriberNo, [FromQuery] int year, [FromQuery] int page = 1, [FromQuery] int pageSize = 5) {
             try
             {
