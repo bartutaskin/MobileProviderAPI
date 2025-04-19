@@ -19,6 +19,7 @@ namespace MobileProvider.Controllers
         }
 
         [HttpPost("usage")]
+        [Authorize]
         public async Task<IActionResult> AddUsage(AddUsageDto dto)
         {
             var result = await _usageService.AddUsageAsync(dto);
