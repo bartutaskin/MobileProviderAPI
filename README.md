@@ -66,7 +66,7 @@ dotnet run
 - **POST** `/api/v1/Bill/calculate` - Calculates the bill for a subscriber (Auth required)
 - **POST** `/api/v1/Bill/pay` - Pays a bill for a specific month/year
 - **GET** `/api/v1/QueryBill/query` - Gets bill summary (Auth required)
-- **GET** `/api/v1/QueryBill/query` - Gets bill details (Auth required)
+- **GET** `/api/v1/QueryBillDetailed/query-detailed` - Gets bill details (Auth required)
 
 ## Design Decisions
 - Modular Service Layer: Separated logic from controllers using services for better scalability and testability.
