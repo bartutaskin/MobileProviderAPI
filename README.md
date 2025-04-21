@@ -28,8 +28,8 @@ A backend API for managing subscriber registrations, logging mobile and internet
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/bartutaskin/SE4453-MobileProvider.git
-cd SE4453-MobileProvider
+git clone https://github.com/bartutaskin/SE4458-MobileProvider.git
+cd SE4458-MobileProvider
 ```
 
 2. Create a PostgreSQL database and update the connection string in `appsettings.json`:
