@@ -18,7 +18,7 @@ namespace MobileProvider.Controllers
         }
 
         [HttpGet("query")]
-        //[Authorize]
+        [Authorize]
         public IActionResult QueryBill([FromQuery] string subscriberNo, [FromQuery] int month, [FromQuery] int year)
         {
             try
