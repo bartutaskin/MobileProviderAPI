@@ -10,7 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-namespace SE4453_MobileProvider
+namespace SE4458_MobileProvider
 {
     public class Program
     {

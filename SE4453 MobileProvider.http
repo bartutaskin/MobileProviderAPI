@@ -1,6 +1,0 @@
-@SE4453_MobileProvider_HostAddress = http://localhost:5186
-
-GET {{SE4453_MobileProvider_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

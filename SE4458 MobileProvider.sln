@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE4453 MobileProvider", "SE4453 MobileProvider.csproj", "{FB5E76A1-9BFA-4BB5-8183-1EB50B994804}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE4458 MobileProvider", "SE4458 MobileProvider.csproj", "{FB5E76A1-9BFA-4BB5-8183-1EB50B994804}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

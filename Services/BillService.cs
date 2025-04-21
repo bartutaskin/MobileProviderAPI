@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using MobileProvider.Data;
 using MobileProvider.Models.DTOs;
 using MobileProvider.Models.Entities;
-using SE4453_MobileProvider.Models.DTOs;
 
 namespace MobileProvider.Services
 {
@@ -72,8 +71,7 @@ namespace MobileProvider.Services
                 throw new InvalidOperationException("Subscriber not found.");
             }
 
-            var bill = _context.Bills.Include(b => b.Subscriber)
-                .FirstOrDefault(b => b.SubscriberId == subscriber.Id && b.Month == month && b.Year == year);
+            var bill = _context.Bills.Include(b => b.Subscriber).FirstOrDefault(b => b.SubscriberId == subscriber.Id && b.Month == month && b.Year == year);
 
             if (bill == null)
             {
@@ -140,7 +138,6 @@ namespace MobileProvider.Services
                 return "Insufficient payment amount.";
             }
             bill.PaidStatus = true;
-            _context.Bills.Update(bill);
             await _context.SaveChangesAsync();
             return "Payment successful.";
         }

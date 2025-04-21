@@ -1,4 +1,4 @@
-﻿namespace SE4453_MobileProvider.Models.DTOs
+﻿namespace MobileProvider.Models.DTOs
 {
     public class PagedResult<T>
     {

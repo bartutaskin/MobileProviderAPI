@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MobileProvider.Services;
 
-namespace SE4453_MobileProvider.Controllers
+namespace MobileProvider.Controllers
 {
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiVersion("1.0")]
@@ -18,13 +18,13 @@ namespace SE4453_MobileProvider.Controllers
         }
 
         [HttpGet("query")]
-        [Authorize]
+        //[Authorize]
         public IActionResult QueryBill([FromQuery] string subscriberNo, [FromQuery] int month, [FromQuery] int year)
         {
             try
             {
                 var bill = _billService.GetBillSummary(subscriberNo, month, year);
-                return Ok(new { BillTotal = bill.TotalAmount, PaidStatus = bill.PaidStatus });
+                return Ok(new { TotalAmount = bill.TotalAmount, PaidStatus = bill.PaidStatus });
             }
             catch (InvalidOperationException ex)
             {

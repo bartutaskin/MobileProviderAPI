@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MobileProvider.Models.DTOs;
 using MobileProvider.Services;
-using SE4453_MobileProvider.Models.DTOs;
+using MobileProvider.Models.DTOs;
 
 namespace MobileProvider.Controllers
 {
