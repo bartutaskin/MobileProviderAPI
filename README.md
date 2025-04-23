@@ -66,6 +66,7 @@ To test secured API endpoints, use the following demo account:
 
 - **Username:** test 
 - **Password:** test123
+- **SubscriberNo:** NO123
 
 ### 🔑 How to Authenticate
 
