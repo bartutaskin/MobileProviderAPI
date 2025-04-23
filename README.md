@@ -77,9 +77,10 @@ With body:
   "username": "test",
   "password": "test123"
 }
+```
 2. Copy the JWT token from the response.
 3. Use it in the Authorize section (Swagger UI) like this:
-```
+``` 
 Bearer <your-token-here>
 ```
 ✅ After authorizing, you can access all endpoints that require authentication.
