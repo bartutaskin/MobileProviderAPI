@@ -81,6 +81,12 @@ namespace SE4458_MobileProvider
                 options.ApiVersionReader = new UrlSegmentApiVersionReader();
             });
 
+            builder.Services.AddVersionedApiExplorer(options =>
+            {
+                options.GroupNameFormat = "'v'VVV"; 
+                options.SubstituteApiVersionInUrl = true;
+            });
+
             builder.Services.AddScoped<UsageService>();
             builder.Services.AddScoped<BillService>();
             var app = builder.Build();
