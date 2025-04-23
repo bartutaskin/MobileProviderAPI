@@ -60,6 +60,10 @@ dotnet run
 The API can be accessed via the following URL:
 - https://mobileproviderbt-egbra3excxgpfndy.italynorth-01.azurewebsites.net
 
+## 🎥 Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/S-15bIi21J8/0.jpg)](https://youtu.be/S-15bIi21J8)
+
 ## 🧪 Demo Access & Authentication
 
 To test secured API endpoints, use the following demo account:
