@@ -84,3 +84,9 @@ The API can be accessed via the following URL:
   - Internet: free under 20 GB, then 10 units per 10 GB.
 
 - JWT-based Auth: Provides stateless security and supports authorized endpoints.
+
+## 🧭 ER Diagram
+
+Here is the Entity-Relationship (ER) diagram illustrating the core database structure of the system:
+
+![ER Diagram](ER.png)
