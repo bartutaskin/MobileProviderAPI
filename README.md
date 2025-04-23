@@ -62,7 +62,6 @@ The API can be accessed via the following URL:
 
 ## 🎥 Demo Video
 
-Link: https://youtu.be/S-15bIi21J8
 [![Watch the demo](https://img.youtube.com/vi/S-15bIi21J8/0.jpg)](https://youtu.be/S-15bIi21J8)
 
 ## 🧪 Demo Access & Authentication
